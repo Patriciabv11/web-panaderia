@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background-color: #CCD5AE;
+  font-family: 'Quicksand', sans-serif;
+}
+nav {
+  background-color: navajowhite;
+  align-content: center;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+.enlaces {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 3rem;
+  row-gap: 2rem;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5rem;
+}
+.barranav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  margin-right: 1.5rem;
+}
+header {
+  display: flex;
+  background-image: url(img/header.jpg);
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  height: 300px;
+  text-shadow: -4px -3px 3px grey;
+  font-family: 'Monotype Corsiva';
+  color:white;
+}
+.headercuadro {
+  background-color: rgb(24 23 23 / 83%);
+}
+.cualidades{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FAEDCD;
+  padding-bottom: 3rem;
+}
+.titulo {
+  font-family: 'Monotype Corsiva';
+}
+.titulo2 {
+  text-align: center;
+  background-color: #FAEDCD;
+  margin: 0;
+  padding: 1rem;
+}
+.titulo3 {
+  text-align: center;
+  background-color: #CCD5AE;
+  margin: 0;
+  padding: 2rem;
+}
+.valoracionesp1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #CCD5AE;
+  padding-bottom: 3rem;
+}
+.v1 {
+  background-color: #E9EDC9;
+  width: 300px;
+  text-align: center;
+  padding-top: 3rem;
+  border-radius: 1rem;
+}
+.v2 {
+  background-color: #E9EDC9;
+  width: 300px;
+  text-align: center;
+  padding-top: 3rem;
+  border-radius: 1rem;
+}
+.v3 {
+  background-color: #E9EDC9;
+  width: 300px;
+  text-align: center;
+  padding-top: 3rem;
+  border-radius: 1rem;
+}
+.valoracionesp2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #CCD5AE;
+  padding-bottom: 3rem;
+}
+.v4 {
+  background-color: #E9EDC9;
+  width: 300px;
+  text-align: center;
+  padding-top: 3rem;
+  border-radius: 1rem;
+}
+.v5 {
+  background-color: #E9EDC9;
+  width: 300px;
+  text-align: center;
+  padding-top: 3rem;
+  border-radius: 1rem;
+}
+.v6 {
+  background-color: #E9EDC9;
+  width: 300px;
+  text-align: center;
+  padding-top: 3rem;
+  border-radius: 1rem;
+}
+.fa-star {
+  color: gold;
+}
+.reseñas {
+  background-color: #FAEDCD;
+  padding: 1rem;
+  float: right;
+  border-radius: 2rem;
+}
+.button {
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+}
+.pie-pagina {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #D4A373;
+}
+.numero {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
