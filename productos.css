@@ -1,3 +1,69 @@
 body {
   margin: 0;
+  background-color: aquamarine;
+}
+header {
+  display: flex;
+  background-image: url(img/headerproductos.jpg);
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  height: 300px;
+  text-shadow: -4px -3px 3px grey;
+  font-family: 'Monotype Corsiva';
+  color:white;
+}
+.headercuadro {
+  background-color: rgb(24 23 23 / 83%);
+}
+.elige {
+  text-align: center;
+  background-color: sandybrown;
+  margin-top: -2%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+img {
+  border-radius: 5px 5px 0 0;
+}
+.container {
+  padding: 2px 16px;
+}
+.fila1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.fila2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.fila3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.fila4{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.fila5{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3rem;
 }
