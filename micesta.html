@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="indexgeneral.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="micesta.css">
   <script src="https://kit.fontawesome.com/c793315af7.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +21,9 @@
       panel.display = panel.display === 'none' ? 'block' : 'none';
     };
   </script>
-  <title>Panadería Pedrín</title>
+  <title>Mi cesta</title>
 </head>
 <body>
-  <!-- Barra de navegacion -->
   <nav>
     <div class="barranav">
       <div class="logo">
@@ -38,7 +37,6 @@
         <a class="productos" href="productos.html">Productos</a>
         <a class="pedidosespeciales" href="#">Pedidos especiales</a>
         <button class="carrito" onclick="abrir_panel()"><i class="fa-solid fa-cart-shopping" role="button"></i></button>
-        <!-- Carrito de la compra -->
         <div class="lista-compra">
           <h1 class="espaciotitulos">Mi carrito</h1>
           <div class="lineacarrito"></div>
@@ -78,7 +76,7 @@
           <div class="finalcompra">
             <p class="unidades">Unidades 12</p>
             <p class="total">TOTAL 30€</p>
-            <form action="micesta.html">
+            <form method="post" action="micesta.html">
               <button class="verarticulos" type="submit">Ver artículos en tu cesta</button>
             </form>
           </div>
@@ -87,77 +85,9 @@
       </div>
     </div>
   </nav>
-  <!-- Header -->
-  <header>
-    <div class="headercuadro">
-      <h1>Panadería Pedrín</h1>
-      <h2>El mejor pan artesano hecho con masa madre</h2>
-    </div>
-  </header>
-  <!-- Cualidades de la panaderia -->
-  <h2 class="titulo2">QUÉ NOS DIFERENCIA</h2>
-  <div class="linea1"></div>
-  <div class="cualidades">
-    <div class="panes">
-      <h4>Pan hecho con auténtica masa madre</h4>
-      <img class="imagen1" src="img/masa-madre-panaderia-pan-comun.png" height="200px"/>
-    </div>
-    <div class="envios">
-      <h4>Envíos inmediatos en menos de 24h</h4>
-      <img class="imagen2" src="img/enviorapido.png" height="200px"/>
-    </div>
-    <div class="precios">
-      <h4>El mejor precio garantizado</h4>
-      <img class="imagen3" src="img/economico.png" height="200px"/>
-    </div>
-  </div>
-  <!-- Reseñas de los clientes -->
-  <h2 class="titulo3">RESEÑAS DE CLIENTES</h2>
-  <div class="linea2"></div>
-  <div class="valoraciones">
-    <div class="valor">
-      <img src="img/avatarvaloraciones.png" height="50px"/>
-      <h4>NOMBRE</h4>
-      <p>5<i class="fa-solid fa-star"></i></p>
-      <p>Valoración positiva</p>
-    </div>
-    <div class="valor">
-      <img src="img/avatarvaloraciones.png" height="50px"/>
-      <h4>NOMBRE</h4>
-      <p>5<i class="fa-solid fa-star"></i></p>
-      <p>Valoración positiva</p>
-    </div>
-    <div class="valor">
-      <img src="img/avatarvaloraciones.png" height="50px"/>
-      <h4>NOMBRE</h4>
-      <p>5<i class="fa-solid fa-star"></i></p>
-      <p>Valoración positiva</p>
-    </div>
-  </div>
-  <div class="valoraciones">
-    <div class="valor">
-      <img src="img/avatarvaloraciones.png" height="50px"/>
-      <h4>NOMBRE</h4>
-      <p>5<i class="fa-solid fa-star"></i></p>
-      <p>Valoración positiva</p>
-    </div>
-    <div class="valor">
-      <img src="img/avatarvaloraciones.png" height="50px"/>
-      <h4>NOMBRE</h4>
-      <p>5<i class="fa-solid fa-star"></i></p>
-      <p>Valoración positiva</p>
-    </div>
-    <div class="valor">
-      <img src="img/avatarvaloraciones.png" height="50px"/>
-      <h4>NOMBRE</h4>
-      <p>5<i class="fa-solid fa-star"></i></p>
-      <p>Valoración positiva</p>
-    </div>
-  </div>
-  <div class="button">
-    <button class="reseñas">Mostrar mas reseñas</button>
-  </div>
-  <!-- Footer -->
+  <h1>Mi Cesta</h1>
+
+
   <footer>
     <div class="informacion">
       <h3>Informacion</h3>

@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  background-color: #CCD5AE;
-  font-family: 'Merriweather', serif;
-}
 header {
   display: flex;
   background-image: url(img/header.jpg);
@@ -18,86 +13,69 @@ header {
 .headercuadro {
   background-color: rgb(24 23 23 / 83%);
 }
+.linea1 {
+  height: 2px;
+}
+.linea2 {
+  display: flex;
+  height: 2px;
+  background-color: #FFE6A7;
+}
 .cualidades{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #FAEDCD;
-  padding-bottom: 3rem;
+  background-color: #FFE6A7;
+  padding-bottom: 4rem;
+}
+.envios {
+  margin-right: 30px;
+}
+.precios {
+  margin-right: 50px;
+}
+.imagen1{
+  margin-left: 40px;
+}
+.imagen2{
+  margin-left: 40px;
+}
+.imagen3{
+  margin-left: 10px;
 }
 .titulo2 {
   text-align: center;
-  background-color: #FAEDCD;
+  background-color: #FFE6A7;
   margin: 0;
   padding: 1rem;
 }
 .titulo3 {
   text-align: center;
-  background-color: #CCD5AE;
+  color: white;
+  background-color: #99582A;
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
 }
-.valoracionesp1{
+.valoraciones{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #CCD5AE;
+  background-color: #99582A;
   padding-bottom: 3rem;
 }
-.v1 {
-  background-color: #E9EDC9;
-  width: 300px;
+.valor {
+  background-color: #FFE6A7;
+  width: 400px;
+  height: 300px;
   text-align: center;
   padding-top: 3rem;
   border-radius: 1rem;
-}
-.v2 {
-  background-color: #E9EDC9;
-  width: 300px;
-  text-align: center;
-  padding-top: 3rem;
-  border-radius: 1rem;
-}
-.v3 {
-  background-color: #E9EDC9;
-  width: 300px;
-  text-align: center;
-  padding-top: 3rem;
-  border-radius: 1rem;
-}
-.valoracionesp2{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #CCD5AE;
-  padding-bottom: 3rem;
-}
-.v4 {
-  background-color: #E9EDC9;
-  width: 300px;
-  text-align: center;
-  padding-top: 3rem;
-  border-radius: 1rem;
-}
-.v5 {
-  background-color: #E9EDC9;
-  width: 300px;
-  text-align: center;
-  padding-top: 3rem;
-  border-radius: 1rem;
-}
-.v6 {
-  background-color: #E9EDC9;
-  width: 300px;
-  text-align: center;
-  padding-top: 3rem;
-  border-radius: 1rem;
+  margin-top: 40px;
 }
 .fa-star {
   color: gold;
 }
 .reseñas {
-  background-color: #FAEDCD;
   padding: 1rem;
   float: right;
   border-radius: 2rem;
@@ -105,16 +83,11 @@ header {
 .button {
   padding-right: 3rem;
   padding-bottom: 5rem;
+  background-color: #99582A;
 }
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-color: #D4A373;
+button {
+  cursor: pointer;
+  background-color: #FFE6A7;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border-color: #FFE6A7;
 }
-.numero {
-  font-size: 3rem;
-  margin: 1rem;
-}
-
