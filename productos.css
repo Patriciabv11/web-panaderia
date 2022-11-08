@@ -1,10 +1,6 @@
-body {
-  margin: 0;
-  background-color: aquamarine;
-}
 header {
   display: flex;
-  background-image: url(img/headerproductos.jpg);
+  background-image: url(img/haderprod.jpg);
   text-align: center;
   justify-content: center;
   flex-direction: column;
@@ -19,17 +15,55 @@ header {
 }
 .elige {
   text-align: center;
-  background-color: sandybrown;
-  margin-top: -2%;
+  background-color: #FFE6A7;
+  margin: 0;
+  padding: 1rem;
+}
+.linea1 {
+  height: 2px;
+  background-color: #99582A;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 20%;
   border-radius: 5px;
+  background-color: #99582A;
+  color: white;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 400px;
+  height: 550px;
+}
+.cardespecial1 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
+  background-image: url(img/fondonavideno.jpg);
+  color: white;
+}
+.cardespecial1:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 400px;
+  height: 550px;
+}
+.cardcuadro {
+  background-color: rgb(24 23 23 / 83%);
+}
+.cardespecial2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
+  background-image: url(img/fondohalloween.jpg);
+  color: white;
+}
+.cardespecial2:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 400px;
+  height: 550px;
 }
 img {
   border-radius: 5px 5px 0 0;
@@ -42,6 +76,7 @@ img {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 3rem;
+  padding-top: 30px;
 }
 .fila2{
   display: flex;
@@ -66,4 +101,15 @@ img {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 3rem;
+}
+.compra {
+  cursor: pointer;
+  background-color: #FFE6A7;
+  border-radius: 20px;
+  width: 120px;
+  height: 35px;
+}
+.boton {
+  display: flex;
+  justify-content: flex-end;
 }

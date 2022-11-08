@@ -1,0 +1,30 @@
+.container {
+  margin-left: 60px;
+}
+.articulos {
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.resumen {
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  width: 400px;
+  align-items: flex-end;
+}
+.linea {
+  height: 1px;
+  background-color: gray;
+}
+
+.general{
+  display:flex; 
+  justify-content: space-around; 
+}

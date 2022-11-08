@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="indexprincipal.css">
+  <link rel="stylesheet" href="indexgeneral.css">
   <link rel="stylesheet" href="productos.css">
   <script src="https://kit.fontawesome.com/c793315af7.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +15,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <script>
+    const abrir_panel = () => {
+      const panel = document.querySelectorAll('.lista-compra')[0].style;
+      panel.display = panel.display === 'none' ? 'block' : 'none';
+    };
+  </script>
   <title>Productos</title>
 </head>
 <body>
+  <!-- Barra de navegacion -->
   <nav>
     <div class="barranav">
       <div class="logo">
@@ -27,175 +34,306 @@
         <h1>Panadería Pedrín</h1>
       </div>
       <div class="enlaces">
-        <a class="inicio" href="#">Inicio</a>
-        <a class="productos" href="#">Productos</a>
+        <a class="inicio" href="index.html">Inicio</a>
+        <a class="productos" href="productos.html">Productos</a>
         <a class="pedidosespeciales" href="#">Pedidos especiales</a>
-        <button class="carrito"><i class="fa-solid fa-cart-shopping" role="button"></i></button>
-        <div class="lista-compra"></div>
+        <button class="carrito" onclick="abrir_panel()"><i class="fa-solid fa-cart-shopping" role="button"></i></button>
+        <!-- Carrito de la compra -->
+        <div class="lista-compra">
+          <h1 class="espaciotitulos">Mi carrito</h1>
+          <div class="lineacarrito"></div>
+          <div class="elemento">
+            <img src="img/pan/pan-picos.webp" height="90px" alt="panpicos">
+            <div class="descripcion">
+              <p>Pan de picos</p>
+              <b>Unidades 1</b></br>
+              <p class="unidades">2,50€ x 2 unidades</p>
+              <b class="precio">5€</b></br>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="lineaseparacion"></div>
+          <div class="elemento">
+            <img src="img/pan/pan-lena.jpg" height="90px" alt="panleña">
+            <div class="descripcion">
+              <p>Pan de leña</p>
+              <b>Unidades 1</b></br>
+              <p class="unidades">2,50€ x 6 unidades</p>
+              <b class="precio">15€</b></br>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="lineaseparacion"></div>
+          <div class="elemento">
+            <img src="img/pan/Pan-Rosca.jpg" height="90px" alt="panrosca">
+            <div class="descripcion">
+              <p>Pan de rosca</p>
+              <b>Unidades 4</b></br>
+              <p class="unidades">2,50€ x 4 unidades</p>
+              <b class="precio">10€</b></br>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="lineacarrito"></div>
+          <div class="finalcompra">
+            <p class="unidades">Unidades 12</p>
+            <p class="total">TOTAL 30€</p>
+            <form method="post" action="micesta.html">
+              <button class="verarticulos" type="submit">Ver artículos en tu cesta</button>
+            </form>
+          </div>
+        </div>
         <i class="fa-solid fa-circle-user" href="#"></i>
       </div>
     </div>
   </nav>
+  <!-- Header -->
   <header>
     <div class="headercuadro">
       <h1>Nuestros mejores productos</h1>
     </div>
   </header>
+  <!-- Tipos de pan para elegir -->
   <div class="elige">
-    <h1>Elige tu pan preferido</h1>
+    <h1>ELIGE TU PAN PREFERIDO</h1>
     <p>Puedes añadir a la cesta cualquier tipo de pan disponible</p>
   </div>
+  <div class="linea1"></div>
   <div class="fila1">
     <div class="card">
-      <img src="img/pan-pistola.jpg" alt="panpistola" style="width:100%">
+      <img src="img/pan/pan-pistola.jpg" alt="panpistola" height="350px" style="width:100%">
       <div class="container">
         <h4><b>Pan pistola</b></h4> 
-        <p>Descripcion</p> 
+        <p>Descripción</p>
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-trenza.jpg" alt="pantrenza" style="width:100%">
+      <img src="img/pan/pan-trenza.jpg" alt="pantrenza" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan trenza</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de trenza</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-campesino.jpg" alt="pancampesino" style="width:100%">
+      <img src="img/pan/pan-campesino.jpg" alt="pancampesino" height="350px" style="width:100%">
       <div class="container">
         <h4><b>Pan campesino</b></h4> 
-        <p>Descripcion</p> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/Pan-Rosca.jpg" alt="panrosca" style="width:100%">
+      <img src="img/pan/Pan-Rosca.jpg" alt="panrosca" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan rosca</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de rosca</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
   </div>
   <div class="fila2">
     <div class="card">
-      <img src="img/pan-gallego.jpg" alt="pangallego" style="width:100%">
+      <img src="img/pan/pan-gallego.jpg" alt="pangallego" height="350px" style="width:100%">
       <div class="container">
         <h4><b>Pan gallego</b></h4> 
-        <p>Descripcion</p> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-integral.jpg" alt="panintegral" style="width:100%">
+      <img src="img/pan/pan-integral.jpg" alt="panintegral" height="350px" style="width:100%">
       <div class="container">
         <h4><b>Pan integral</b></h4> 
-        <p>Descripcion</p> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/Pan-baguette.jpg" alt="panbaguette" style="width:100%">
+      <img src="img/pan/Pan-baguette.jpg" alt="panbaguette" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan baguette</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de baguette</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-leña.jpg" alt="panlena" style="width:100%">
+      <img src="img/pan/pan-lena.jpg" alt="panleña" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan leña</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de leña</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
   </div>
   <div class="fila3">
     <div class="card">
-      <img src="img/pan-picos.webp" alt="panpicos" style="width:100%">
+      <img src="img/pan/pan-picos.webp" alt="panpicos" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan picos</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de picos</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-cristal.jpg" alt="pancristal" style="width:100%">
+      <img src="img/pan/pan-cristal.jpg" alt="pancristal" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan cristal</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de cristal</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-centeno.jpg" alt="pancenteno" style="width:100%">
+      <img src="img/pan/pan-centeno.jpg" alt="pancenteno" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan centeno</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de centeno</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-quinoa.jpg" alt="panquinoa" style="width:100%">
+      <img src="img/pan/pan-quinoa.jpg" alt="panquinoa" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan quinoa</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de quinoa</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
   </div>
   <div class="fila4">
     <div class="card">
-      <img src="img/pan-leche.jpg" alt="panleche" style="width:100%">
+      <img src="img/pan/pan-leche.jpg" alt="panleche" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan leche</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de leche</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-nueces.jpg" alt="pannueces" style="width:100%">
+      <img src="img/pan/pan-nueces.jpg" alt="pannueces" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan nueces</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de nueces</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-chapata.jpg" alt="panchapata" style="width:100%">
+      <img src="img/pan/pan-chapata.jpg" alt="panchapata" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan chhapata</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de chapata</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-maiz.jpg" alt="panmaiz" style="width:100%">
+      <img src="img/pan/pan-maiz.jpg" alt="panmaiz" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan maiz</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de maíz</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
   </div>
   <div class="fila5">
     <div class="card">
-      <img src="img/pan-torta.jpg" alt="pantorta" style="width:100%">
+      <img src="img/pan/pan-torta.jpg" alt="pantorta" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan torta</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de torta</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
     <div class="card">
-      <img src="img/pan-acimo.jpg" alt="panacimo" style="width:100%">
+      <img src="img/pan/pan-acimo.jpg" alt="panacimo" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan acimo</b></h4> 
-        <p>Descripcion</p> 
+        <h4><b>Pan de ácimo</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="img/panettone.jpg" alt="panettone" style="width:100%">
+    <div class="cardespecial1">
+      <img src="img/pan/panettone.jpg" alt="panettone" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Panettone**</b></h4> 
-        <p>Descripcion</p> 
+        <div class="cardcuadro">
+          <h4><b>Panettone**</b></h4> 
+          <p>Descripción</p> 
+          <p>2,50€</p>
+        </div>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="img/pan-muerto.jpg" alt="panmuerto" style="width:100%">
+    <div class="cardespecial2">
+      <img src="img/pan/pan-muerto.jpg" alt="panmuerto" height="350px" style="width:100%">
       <div class="container">
-        <h4><b>Pan muerto**</b></h4> 
-        <p>Descripcion</p> 
+        <div class="cardcuadro">
+          <h4><b>Pan muerto**</b></h4> 
+        <p>Descripción</p> 
+        <p>2,50€</p>
+        </div>
+        <div class="boton">
+          <button class="compra">Añadir al carrito</button>
+        </div>
       </div>
     </div>
   </div>
-
+  <!-- Footer -->
   <footer>
     <div class="informacion">
       <h3>Informacion</h3>
@@ -203,12 +341,14 @@
       <p><a class="privacidad" href="#">Política de privacidad</a></p>
       <p><a class="cookies" href="#">Política de cookies</a></p>
     </div>
+    <div class="linea3"></div>
     <div class="pedido">
       <h3>Encarga tu pedido</h3>
       <p class="numero">612 345 678</p>
       <b>Horario</b>
       <p>De lunes a viernes de 09:00 a 14:30</p>
     </div>
+    <div class="linea3"></div>
     <div class="redes">
       <h3>Nuestras redes sociales</h4>
       <p><img src="img/icono-instagram.png" height="20px">Instagram: <a class="instagram" href="#">panaderiapedrin</a></p>
