@@ -1,30 +1,44 @@
 .container {
-  margin-left: 60px;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
 }
 .articulos {
   border-color: gray;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0.2rem;
   border-radius: 0.5rem;
-  width: 1200px;
+  width: 40rem;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  margin-top: 3rem;
 }
 .resumen {
   border-color: gray;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0.2rem;
   border-radius: 0.5rem;
-  width: 400px;
+  width: 20rem;
   align-items: flex-end;
+  margin-top: 3rem;
+  margin-bottom: 30rem;
 }
 .linea {
-  height: 1px;
+  height: 0.2rem;
   background-color: gray;
 }
 
 .general{
   display:flex; 
   justify-content: space-around; 
+}
+.papelera {
+  margin-left: 14rem;
+}
+.guardar {
+  margin-left: 1rem;
+  width: 18rem;
+  height: 2rem;
+  background-color: gray;
+  border-radius: 0.5rem;
 }
