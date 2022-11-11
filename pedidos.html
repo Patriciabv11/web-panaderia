@@ -24,6 +24,7 @@
   <title>Pedidos</title>
 </head>
 <body>
+  <!--Barra de navegación-->
   <nav>
     <div class="barranav">
       <div class="logo">
@@ -98,36 +99,37 @@
   </div>
   <div class="linea1"></div>
   <div class="container">
-    <h1>Tu pedido</h1>
+    <h1 class="titulopedido">Tu pedido</h1>
     <div class="contenido">
+      <h3 class="rellena">Rellena tu pedido</h3>
       <form>
         <label for="nombre">A nombre de:</label><br>
         <input type="text" id="nombre"><br>
+        <br>
         <label for="descripcion">Descripcion de su pedido:</label><br>
-        <textarea name="descripcion" rows="10" cols="50">Escribe algo</textarea><br>
+        <textarea name="descripcion" rows="10" cols="50"></textarea><br>
+        <br>
         <label for="alergenos">Alérgenos:</label><br>
         <input type="checkbox" id="alergenos">Trigo<br>
         <input type="checkbox" id="alergenos">Centeno<br>
         <input type="checkbox" id="alergenos">Avellanas<br>
         <input type="checkbox" id="alergenos">Almendras<br>
         <input type="checkbox" id="alergenos">Avena<br>
-        <p>Escribe el numero de unidades que quieras del producto</p>
+        <p>Escribe el numero de unidades que quieras del producto.</p>
         <label for="numpedido">Numero de unidades(1-50 max):</label><br>
         <input type="number" id="numpedido" min="1" max="50"><br>
-        <p>Selecciona la fecha de entrega y la hora en la que quieras recibir tu pedido</p>
+        <p>Selecciona la fecha de entrega y la hora en la que quieras recibir tu pedido.</p>
         <label for="fechaentrega">Fecha de entrega:</label><br>
         <input type="date" id="fechaentrega"><br>
+        <br>
         <label for="horaentrega">Hora de entrega:</label><br>
         <input type="time" name="horaentrega">
-        <p>Agrega tu pedido al carrtio</p>
+        <p>Agrega tu pedido al carrtio.</p>
         <button class="anadir">Añadir al carrito</button>
       </form> 
     </div>
   </div>
-
-
-
-
+  <!--Footer-->
   <footer>
     <div class="informacion">
       <h3>Informacion</h3>

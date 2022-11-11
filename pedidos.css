@@ -1,6 +1,6 @@
 header {
   display: flex;
-  background-image: url(img/haderprod.jpg);
+  background-image: url(img/header-pedidos.jpg);
   text-align: center;
   justify-content: center;
   flex-direction: column;
@@ -37,4 +37,20 @@ header {
   padding-left: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: #99582A;
+}
+.rellena {
+  color: white;
+}
+form {
+  color: white;
+}
+.anadir {
+  width: 36rem;
+  height: 2.5rem;
+  background-color: #FFE6A7;
+  border-radius: 0.5rem;
+}
+.titulopedido {
+  margin-left: 13rem;
 }
